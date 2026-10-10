@@ -1,21 +1,19 @@
 <div align="center">
 
-<!-- 1. 翔子透明立绘：无边框原生融入，通透视觉焦点 -->
-<img src="./assets/shokosan.png" width="200" alt="Makinohara Shoko" />
+<!-- 1. 翔子透明立绘：优雅通透，视觉重心 -->
+<img src="./assets/shokosan.png" width="190" alt="Makinohara Shoko" />
 
-<h2 align="center" style="letter-spacing: 2.5px; font-weight: 600; color: #1f2328; margin-top: 14px; margin-bottom: 6px;">
+<h2 align="center" style="letter-spacing: 2px; font-weight: 600; color: #1f2328; margin: 12px 0 6px 0;">
   MAKINOHARA SHOKO
 </h2>
 
-<!-- 2. GitHub Primer 蓝同色系打字机 (#0969da) -->
-<a href="https://github.com/MakinoharaShokosans">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=13.5&duration=3000&pause=1200&color=0969DA&center=true&vCenter=true&width=560&lines=Minecraft+Modder+%26+Voxel+Engineer;Autonomous+Agents%2C+RAG+%26+System+Sandboxes;Visual+Novels%2C+Narratives+%26+Atmosphere;Bit-Perfect+DSP+Engines+%26+Audiophile+Sound" alt="Typing SVG" />
-</a>
+<!-- 2. 原生文字副标题（彻底移除第三方破损的动态打字机，杜绝排版炸裂） -->
+<p align="center" style="color: #656d76; font-size: 13.5px; margin: 0 0 28px 0; letter-spacing: 0.5px;">
+  Minecraft Modder · Autonomous Agents · ACG &amp; Galgame · Audiophile
+</p>
 
-<br/><br/>
-
-<!-- 3. 无边框 ins 风 · GitHub Octicons 同色系矩阵 -->
-<img src="./assets/interests.svg" width="92%" alt="Interests" />
+<!-- 3. 彻底无边框 · GitHub Primer 原生规范矢量矩阵 (全新文件名 domains.svg 破除缓存) -->
+<img src="./assets/domains.svg" width="90%" alt="Domains of Interest" />
 
 </div>
 
