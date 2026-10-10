@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 310" width="100%" height="310" fill="none">
+  <defs>
+    <style>
+      /* 动效：音频柱跳动动画 */
+      @keyframes eq1 { 0%, 100% { height: 6px; y: 16px; } 50% { height: 18px; y: 4px; } }
+      @keyframes eq2 { 0%, 100% { height: 14px; y: 8px; } 50% { height: 6px; y: 16px; } }
+      @keyframes eq3 { 0%, 100% { height: 20px; y: 2px; } 50% { height: 10px; y: 12px; } }
+      @keyframes eq4 { 0%, 100% { height: 8px; y: 14px; } 50% { height: 22px; y: 0px; } }
+      .bar-1 { animation: eq1 1.2s ease-in-out infinite; }
+      .bar-2 { animation: eq2 0.9s ease-in-out infinite 0.2s; }
+      .bar-3 { animation: eq3 1.4s ease-in-out infinite 0.1s; }
+      .bar-4 { animation: eq4 1.1s ease-in-out infinite 0.3s; }
+
+      /* 动效：Agent 智能体核心呼吸动效 */
+      @keyframes coreGlow {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.15); opacity: 1; }
+      }
+      .agent-pulse {
+        animation: coreGlow 3s ease-in-out infinite;
+        transform-origin: 30px 22px;
+      }
+
+      /* 动效：MC 方块微浮动 */
+      @keyframes blockHover {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+      }
+      .mc-block {
+        animation: blockHover 4s ease-in-out infinite;
+      }
+
+      /* 动效：花瓣轻微倾角 */
+      @keyframes petalSway {
+        0%, 100% { transform: rotate(0deg); }
+        50% { transform: rotate(5deg); }
+      }
+      .sakura-sway {
+        animation: petalSway 5s ease-in-out infinite;
+        transform-origin: 28px 22px;
+      }
+
+      .card-title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        fill: #1e293b;
+      }
+      .card-desc {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 12.5px;
+        fill: #64748b;
+        line-height: 1.6;
+      }
+      .badge-text {
+        font-family: "SF Mono", "Fira Code", monospace;
+        font-size: 10px;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+
+  <!-- ================= 卡片 1: MINECRAFT MODDING ================= -->
+  <g transform="translate(10, 10)">
+    <rect width="395" height="135" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect width="395" height="135" rx="12" fill="#f8fafc" fill-opacity="0.4"/>
+    
+    <!-- 专属矢量图：等轴测 MC 模组方块 -->
+    <g transform="translate(24, 22)" class="mc-block">
+      <rect width="38" height="38" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+      <!-- 方块线稿 -->
+      <path d="M19 9 L31 16 L19 23 L7 16 Z" fill="#4ade80" fill-opacity="0.25" stroke="#16a34a" stroke-width="1.2"/>
+      <path d="M7 16 L19 23 L19 33 L7 26 Z" fill="#22c55e" fill-opacity="0.35" stroke="#16a34a" stroke-width="1.2"/>
+      <path d="M19 23 L31 16 L31 26 L19 33 Z" fill="#15803d" fill-opacity="0.35" stroke="#16a34a" stroke-width="1.2"/>
+    </g>
+
+    <text x="76" y="38" class="card-title">Minecraft &amp; Modding</text>
+    <rect x="290" y="24" width="85" height="20" rx="6" fill="#ecfdf5"/>
+    <text x="298" y="38" class="badge-text" fill="#059669">Java · Forge</text>
+
+    <text x="76" y="66" class="card-desc">探索各种高难度硬核整合包</text>
+    <text x="76" y="86" class="card-desc">亲手编写模组逻辑，在像素世界拓展新规则</text>
+  </g>
+
+  <!-- ================= 卡片 2: AI & AGENT ARCHITECTURE ================= -->
+  <g transform="translate(435, 10)">
+    <rect width="395" height="135" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect width="395" height="135" rx="12" fill="#f8fafc" fill-opacity="0.4"/>
+
+    <!-- 专属矢量图：神经网络 Agent 拓扑环 -->
+    <g transform="translate(24, 22)">
+      <rect width="38" height="38" rx="8" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1"/>
+      <g class="agent-pulse">
+        <circle cx="19" cy="19" r="9" stroke="#9333ea" stroke-width="1.2" stroke-dasharray="3 2"/>
+        <circle cx="19" cy="19" r="4.5" fill="#a855f7"/>
+        <circle cx="11" cy="13" r="2" fill="#c084fc"/>
+        <circle cx="27" cy="13" r="2" fill="#c084fc"/>
+        <circle cx="19" cy="28" r="2" fill="#c084fc"/>
+      </g>
+    </g>
+
+    <text x="76" y="38" class="card-title">AI &amp; Autonomous Agents</text>
+    <rect x="298" y="24" width="77" height="20" rx="6" fill="#f5f3ff"/>
+    <text x="306" y="38" class="badge-text" fill="#7c3aed">LLM · RAG</text>
+
+    <text x="76" y="66" class="card-desc">深度关注大语言模型与自演进智能体</text>
+    <text x="76" y="86" class="card-desc">探索沙箱隔离、代码自愈与复杂工作流构建</text>
+  </g>
+
+  <!-- ================= 卡片 3: ACG & GALGAME ================= -->
+  <g transform="translate(10, 160)">
+    <rect width="395" height="135" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect width="395" height="135" rx="12" fill="#f8fafc" fill-opacity="0.4"/>
+
+    <!-- 专属矢量图：精致樱瓣与小说书签线稿 -->
+    <g transform="translate(24, 22)" class="sakura-sway">
+      <rect width="38" height="38" rx="8" fill="#fff1f2" stroke="#fecdd3" stroke-width="1"/>
+      <!-- 极简花瓣几何 -->
+      <path d="M19 10 C24 13 28 20 23 26 C19 28 14 24 15 19 C15 15 18 11 19 10 Z" fill="#fb7185" fill-opacity="0.4" stroke="#e11d48" stroke-width="1.2"/>
+      <circle cx="19" cy="19" r="1.5" fill="#be123c"/>
+    </g>
+
+    <text x="76" y="38" class="card-title">Anime &amp; Galgame</text>
+    <rect x="282" y="24" width="93" height="20" rx="6" fill="#fff1f2"/>
+    <text x="290" y="38" class="badge-text" fill="#e11d48">Visual Novel</text>
+
+    <text x="76" y="66" class="card-desc">番剧杂食党，专注于细腻文本与深刻共鸣</text>
+    <text x="76" y="86" class="card-desc">沉醉于视觉小说中的长篇叙事、角色与氛围</text>
+  </g>
+
+  <!-- ================= 卡片 4: AUDIOPHILE & MUSIC ================= -->
+  <g transform="translate(435, 160)">
+    <rect width="395" height="135" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect width="395" height="135" rx="12" fill="#f8fafc" fill-opacity="0.4"/>
+
+    <!-- 专属矢量图：原生跳动的动态均衡器音频柱 -->
+    <g transform="translate(24, 22)">
+      <rect width="38" height="38" rx="8" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+      <g transform="translate(9, 8)">
+        <rect class="bar-1" x="0" y="10" width="3" height="12" rx="1.5" fill="#0284c7"/>
+        <rect class="bar-2" x="6" y="6" width="3" height="16" rx="1.5" fill="#0284c7"/>
+        <rect class="bar-3" x="12" y="4" width="3" height="18" rx="1.5" fill="#0284c7"/>
+        <rect class="bar-4" x="18" y="12" width="3" height="10" rx="1.5" fill="#0284c7"/>
+      </g>
+    </g>
+
+    <text x="76" y="38" class="card-title">Music &amp; Audiophile</text>
+    <rect x="295" y="24" width="80" height="20" rx="6" fill="#f0f9ff"/>
+    <text x="303" y="38" class="badge-text" fill="#0284c7">Bit-Perfect</text>
+
+    <text x="76" y="66" class="card-desc">耳机不离耳，挑剔的听歌党与发烧友</text>
+    <text x="76" y="86" class="card-desc">对硬件直通、DSP 调音与音频质感怀有执念</text>
+  </g>
+</svg>
