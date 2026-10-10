@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 30" width="100%" height="30" fill="none">
+  <defs>
+    <style>
+      /* 纯本地 CSS 循环轮播动效：100% 稳定，绝不依赖第三方服务器，字号永久锁定 */
+      @keyframes cycle1 {
+        0%, 2% { opacity: 0; transform: translateY(4px); }
+        5%, 22% { opacity: 1; transform: translateY(0); }
+        25%, 100% { opacity: 0; transform: translateY(-4px); }
+      }
+      @keyframes cycle2 {
+        0%, 25% { opacity: 0; transform: translateY(4px); }
+        28%, 47% { opacity: 1; transform: translateY(0); }
+        50%, 100% { opacity: 0; transform: translateY(-4px); }
+      }
+      @keyframes cycle3 {
+        0%, 50% { opacity: 0; transform: translateY(4px); }
+        53%, 72% { opacity: 1; transform: translateY(0); }
+        75%, 100% { opacity: 0; transform: translateY(-4px); }
+      }
+      @keyframes cycle4 {
+        0%, 75% { opacity: 0; transform: translateY(4px); }
+        78%, 97% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(-4px); }
+      }
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      .text-item {
+        font-family: "SF Mono", "Fira Code", Menlo, Consolas, monospace;
+        font-size: 13.5px;
+        font-weight: 500;
+        fill: #0969da; /* GitHub Primer 标志蓝 */
+        text-anchor: middle;
+      }
+      .t1 { animation: cycle1 12s ease-in-out infinite; }
+      .t2 { animation: cycle2 12s ease-in-out infinite; }
+      .t3 { animation: cycle3 12s ease-in-out infinite; }
+      .t4 { animation: cycle4 12s ease-in-out infinite; }
+
+      .cursor {
+        animation: blinkCursor 0.9s infinite;
+        fill: #0969da;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+
+  <!-- 4 组轮播文案，平滑淡入淡出 -->
+  <g transform="translate(300, 20)">
+    <text class="text-item t1">Minecraft Modder &amp; Voxel Engineer <tspan class="cursor">|</tspan></text>
+    <text class="text-item t2">Autonomous Agents, RAG &amp; Sandboxes <tspan class="cursor">|</tspan></text>
+    <text class="text-item t3">Visual Novels, Narratives &amp; Atmosphere <tspan class="cursor">|</tspan></text>
+    <text class="text-item t4">Bit-Perfect DSP &amp; Audiophile Sound <tspan class="cursor">|</tspan></text>
+  </g>
+</svg>

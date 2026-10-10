@@ -3,17 +3,17 @@
 <!-- 1. 翔子透明立绘：优雅通透，视觉重心 -->
 <img src="./assets/shokosan.png" width="190" alt="Makinohara Shoko" />
 
-<h2 align="center" style="letter-spacing: 2px; font-weight: 600; color: #1f2328; margin: 12px 0 6px 0;">
+<h2 align="center" style="letter-spacing: 2px; font-weight: 600; color: #1f2328; margin: 12px 0 4px 0;">
   MAKINOHARA SHOKO
 </h2>
 
-<!-- 2. 原生文字副标题（彻底移除第三方破损的动态打字机，杜绝排版炸裂） -->
-<p align="center" style="color: #656d76; font-size: 13.5px; margin: 0 0 28px 0; letter-spacing: 0.5px;">
-  Minecraft Modder · Autonomous Agents · ACG &amp; Galgame · Audiophile
-</p>
+<!-- 2. 本地原生动态副标题（带平滑轮播与打字光标 |，纯本地 SVG，100% 稳定永不破版） -->
+<img src="./assets/subtitle.svg" width="90%" alt="Focus Ticker" />
 
-<!-- 3. 彻底无边框 · GitHub Primer 原生规范矢量矩阵 (全新文件名 domains.svg 破除缓存) -->
-<img src="./assets/domains.svg" width="90%" alt="Domains of Interest" />
+<br/><br/>
+
+<!-- 3. 无边框 · 纯矢量微动效矩阵（绝对几何居中对齐，全新文件名 domains_v3.svg 破除缓存） -->
+<img src="./assets/domains_v3.svg" width="90%" alt="Domains of Interest" />
 
 </div>
 
